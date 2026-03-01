@@ -104,7 +104,24 @@ body {
   color: #113572;
 }
 
+.sponsors {
+  text-align: center;
+}
 
+.sponsors-box {
+  margin-top: 20px;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  display: inline-block;
+}
+
+.sponsors-box img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
 /* ===== Sekcie ===== */
 .about-text {
   max-width: 900px;
