@@ -337,3 +337,98 @@ body {
     padding: 1.5rem;
   }
 }
+/* HERO (vrch stránky) */
+.about-hero {
+  height: 250px;
+  background: linear-gradient(135deg, #0077b6, #00b4d8);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.about-hero h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+  animation: fadeInDown 0.8s ease;
+}
+
+.about-hero p {
+  font-size: 18px;
+  opacity: 0.9;
+  animation: fadeInUp 0.8s ease;
+}
+
+/* TEXT BLOK */
+.about {
+  max-width: 1000px;
+  margin: -60px auto 60px;
+  padding: 40px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+  animation: fadeIn 1s ease;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.about p {
+  font-size: 17px;
+  line-height: 1.9;
+  color: #2c2c2c;
+  text-align: justify;
+  padding: 12px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.about p:hover {
+  background: #f1f6fb;
+}
+
+
+/* KONTAKT */
+.contact {
+  background: #0e2a5a;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.contact h2 {
+  margin-bottom: 15px;
+}
+
+/* ANIMÁCIE */
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeInDown {
+  from {opacity: 0; transform: translateY(-20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+@keyframes fadeInUp {
+  from {opacity: 0; transform: translateY(20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .about {
+    margin: -40px 15px 40px;
+    padding: 20px;
+  }
+
+  .about-hero h1 {
+    font-size: 28px;
+  }
+}
