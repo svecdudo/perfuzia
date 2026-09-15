@@ -4,22 +4,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Stanovy | Slovenská Perfúziologická Spoločnosť</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Raleway:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<header class="header">
+<header class="header header--compact">
+  <div class="header-photo" aria-hidden="true"></div>
+  <svg class="ecg" viewBox="0 0 600 80" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0 50 H110 l8 -7 l8 7 H160 l6 12 l9 -55 l9 68 l7 -25 H250 l9 -9 l9 9 H330 l6 12 l9 -45 l9 56 l7 -23 H430 l8 -7 l8 7 H600" />
+  </svg>
+
   <div class="header-inner">
-    <h1>Stanovy spoločnosti</h1>
+    <div class="header-left">
+      <a href="index.html"><img src="img/logo.png" alt="Logo" class="logo"></a>
+      <h1>Stanovy spoločnosti</h1>
+    </div>
+
+    <nav class="navbar">
+      <a href="index.html">Domov</a>
+      <a href="o-nas.html">O nás</a>
+      <a href="stanovy.html" aria-current="page">Stanovy</a>
+      <a href="index.html#kontakt">Kontakt</a>
+    </nav>
   </div>
 </header>
-
-<nav class="navbar">
-  <a href="index.html">Domov</a>
-  <a href="o-nas.html">O nás</a>
-  <a href="stanovy.html">Stanovy</a>
-  <a href="index.html#kontakt">Kontakt</a>
-</nav>
+<div class="tricolor" aria-hidden="true"></div>
 
 <section class="container">
 

@@ -5,108 +5,88 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Slovenská Spoločnosť pre Mimotelový Obeh</title>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Raleway:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 
 </head>
 <body>
   <header class="header">
-    <div class="header-left">
-      <img src="img/logo.png" alt="Logo" class="logo">
-      <center><h1>Slovenská spoločnosť pre mimotelový obeh a podporné systémy krvného obehu a dýchania</h1></center>
-    
+    <div class="header-photo" aria-hidden="true"></div>
+    <svg class="ecg" viewBox="0 0 600 80" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0 50 H110 l8 -7 l8 7 H160 l6 12 l9 -55 l9 68 l7 -25 H250 l9 -9 l9 9 H330 l6 12 l9 -45 l9 56 l7 -23 H430 l8 -7 l8 7 H600" />
+    </svg>
+
+    <div class="header-inner">
+      <div class="header-left">
+        <img src="img/logo.png" alt="Logo" class="logo">
+        <h1>Slovenská spoločnosť pre mimotelový obeh a podporné systémy krvného obehu a dýchania</h1>
+      </div>
+
+      <nav class="navbar">
+        <a href="o-nas.html">O nás</a>
+        <a href="#kongres">Kongres</a>
+        <a href="#kontakt">Kontakt</a>
+        <a href="stanovy.html">Stanovy</a>
+        <!-- <a href="Konferencie">Konferencie</a> -->
+        <!--<a href="EBCP">EBCP</a>-->
+      </nav>
     </div>
   </header>
+  <div class="tricolor" aria-hidden="true"></div>
 
-  <nav class="navbar">
-    <a href="o-nas.html">O nás</a>
-    <a href="#kongres">Kongres</a>
-    <a href="#kontakt">Kontakt</a>
-    <a href="stanovy.html">Stanovy</a>
-   <!-- <a href="Konferencie">Konferencie</a> -->
-    <!--<a href="EBCP">EBCP</a>-->
-  </nav>
   <section class="hero-banner">
-  <img src="img/beograd.jpg" alt="II. Slovensko-Česko-Poľský perfuziologický kongres">
-</section>
-
-<h1 class="section-title">Registrácia na kongres</h1>
-
-<div class="registracia-wrapper">
-  <a href="https://www.perfuze.cz" 
-     target="_blank" 
-     class="registracia-btn">
-     Registrovať sa na kongres
-  </a>
-</div>
-
-  <section class="container" id="kongres">
-  <center><h2>kongres</h2></center>
-    <p class="kongres-text">
-Odborný kongres Slovenskej perfúziologickej spoločnosti sa uskutoční v Žiline
-v priestoroch hotela Holiday Inn. Podujatie je určené pre perfuziológov,
-lekárov a zdravotníckych odborníkov so záujmom o mimotelový obeh,
-podporné systémy krvného obehu a intenzívnu medicínu.
-</p>
-<div class="kongres-info-wrapper">
-  <button class="kongres-info-btn" onclick="toggleKongresInfo()">
-    program kongresu
-  </button>
-</div>
-
-<div id="detail-kongresu" class="kongres-detail">
-  <p>
-<section id="program" class="program-section">
-
-  <h2>Program kongresu</h2>
-</p>
-  <div class="program-images">
-
-    <img src="img/program1.jpg" alt="Program kongresu 1">
-
-    <img src="img/program2.jpg" alt="Program kongresu 2">
-
-    <img src="img/program3.jpg" alt="Program kongresu 3">
-
-  </div>
-
-</section>
-</section>
-</div>
-</div>
-
-
-<section class="container sponsors">
-  <h2>Sponzori</h2>
-
-  <div class="sponsors-box">
-    <img src="img/sponzori.png" alt="Sponzori kongresu">
-  </div>
-
-</section>
-
-</section>
-
-
-
-
-    <div class="map">
-     <section class="container" id="kongres">
-    <h2>Miesto konania kongresu</h2>
-    <p>Kongres sa uskutoční v Hoteli Holiday Inn v Žiline.</p>
-
-<div class="map-wrapper">
- <div class="map-wrapper">
-  <iframe
-    src="https://www.google.com/maps?q=Holiday+Inn+Žilina&output=embed"
-    width="100%"
-    height="380"
-    style="border:0; border-radius:14px;"
-    loading="lazy"
-    referrerpolicy="no-referrer-when-downgrade">
-  </iframe>
-</div> 
-
+    <img src="img/beograd.jpg" alt="II. Slovensko-Česko-Poľský perfuziologický kongres">
   </section>
+
+  <main>
+    <h1 class="section-title">Registrácia na kongres</h1>
+
+    <div class="registracia-wrapper">
+      <a href="https://www.perfuze.cz"
+         target="_blank"
+         class="registracia-btn">
+         Registrovať sa na kongres
+      </a>
+    </div>
+
+    <section class="container" id="kongres">
+      <h2>kongres</h2>
+      <p class="kongres-text">
+        Odborný kongres Slovenskej perfúziologickej spoločnosti sa uskutoční v Žiline
+        v priestoroch hotela Holiday Inn. Podujatie je určené pre perfuziológov,
+        lekárov a zdravotníckych odborníkov so záujmom o mimotelový obeh,
+        podporné systémy krvného obehu a intenzívnu medicínu.
+      </p>
+
+      <div class="kongres-info-wrapper">
+        <button class="kongres-info-btn" onclick="toggleKongresInfo()">
+          program kongresu
+        </button>
+      </div>
+
+      <div id="detail-kongresu" class="kongres-detail">
+        <section id="program" class="program-section">
+          <h2>Program kongresu</h2>
+
+          <div class="program-images">
+            <img src="img/program1.jpg" alt="Program kongresu 1">
+            <img src="img/program2.jpg" alt="Program kongresu 2">
+            <img src="img/program3.jpg" alt="Program kongresu 3">
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section class="container sponsors">
+      <h2>Sponzori</h2>
+
+      <div class="sponsors-box">
+        <img src="img/sponzori.png" alt="Sponzori kongresu">
+      </div>
+    </section>
+  </main>
 
   <footer class="footer" id="kontakt">
     <div class="footer-inner">
