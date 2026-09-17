@@ -1,6 +1,7 @@
-.program1.jpg
-.program2.jpg
-.program3.jpg
-oracleJdk-26/
+# nastavenia editora
+.vscode/
 
-oracleJdk-26/
+# systemove subory
+Thumbs.db
+desktop.ini
+.DS_Store
