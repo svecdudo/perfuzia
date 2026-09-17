@@ -27,63 +27,60 @@
       <nav class="navbar">
         <a href="o-nas.html">O nás</a>
         <a href="#kongres">Kongres</a>
+        <a href="#spolupraca">Spolupráca</a>
         <a href="#kontakt">Kontakt</a>
         <a href="stanovy.html">Stanovy</a>
         <!-- <a href="Konferencie">Konferencie</a> -->
-        <!--<a href="EBCP">EBCP</a>-->
       </nav>
     </div>
   </header>
   <div class="tricolor" aria-hidden="true"></div>
 
-  <section class="hero-banner">
-    <img src="img/beograd.jpg" alt="II. Slovensko-Česko-Poľský perfuziologický kongres">
+  <section class="hero-banner" id="kongres">
+    <img src="img/beograd.jpg" alt="EuroPerfusion 2026 Belgrade">
   </section>
 
   <main>
-    <h1 class="section-title">Registrácia na kongres</h1>
+    <section class="container partners" id="spolupraca">
+      <h2>Medzinárodná spolupráca</h2>
 
-    <div class="registracia-wrapper">
-      <a href="https://www.perfuze.cz"
-         target="_blank"
-         class="registracia-btn">
-         Registrovať sa na kongres
-      </a>
-    </div>
+      <div class="partners-grid">
+        <a class="partner" href="https://www.perfuze.cz" target="_blank" rel="noopener">
+          <span class="partner-logo"><img src="img/logo-cz.svg" alt="Perfuze – Český spolek pro mimotělní oběh"></span>
+          <span class="partner-name">Český spolek pro mimotělní oběh</span>
+        </a>
 
-    <section class="container" id="kongres">
-      <h2>kongres</h2>
-      <p class="kongres-text">
-        Odborný kongres Slovenskej perfúziologickej spoločnosti sa uskutoční v Žiline
-        v priestoroch hotela Holiday Inn. Podujatie je určené pre perfuziológov,
-        lekárov a zdravotníckych odborníkov so záujmom o mimotelový obeh,
-        podporné systémy krvného obehu a intenzívnu medicínu.
-      </p>
+        <a class="partner" href="https://www.perfuzja.pl" target="_blank" rel="noopener">
+          <span class="partner-logo"><img src="img/logo-pl.png" alt="Polskie Stowarzyszenie Perfuzjonistów"></span>
+          <span class="partner-name">Polskie Stowarzyszenie Perfuzjonistów</span>
+        </a>
 
-      <div class="kongres-info-wrapper">
-        <button class="kongres-info-btn" onclick="toggleKongresInfo()">
-          program kongresu
-        </button>
-      </div>
-
-      <div id="detail-kongresu" class="kongres-detail">
-        <section id="program" class="program-section">
-          <h2>Program kongresu</h2>
-
-          <div class="program-images">
-            <img src="img/program1.jpg" alt="Program kongresu 1">
-            <img src="img/program2.jpg" alt="Program kongresu 2">
-            <img src="img/program3.jpg" alt="Program kongresu 3">
-          </div>
-        </section>
+        <a class="partner" href="https://www.ebcp.eu" target="_blank" rel="noopener">
+          <span class="partner-logo"><img src="img/logo-ebcp.png" alt="The European Board of Cardiovascular Perfusion"></span>
+          <span class="partner-name">The European Board of Cardiovascular Perfusion</span>
+        </a>
       </div>
     </section>
 
     <section class="container sponsors">
       <h2>Sponzori</h2>
 
-      <div class="sponsors-box">
-        <img src="img/sponzori.png" alt="Sponzori kongresu">
+      <div class="sponsors-grid">
+        <div class="sponsor"><img src="img/sponzori/biomedica.png" alt="Biomedica"></div>
+        <div class="sponsor"><img src="img/sponzori/timed.png" alt="Timed"></div>
+        <div class="sponsor"><img src="img/sponzori/johnson-johnson.png" alt="Johnson &amp; Johnson MedTech"></div>
+        <div class="sponsor"><img src="img/sponzori/medtronic.png" alt="Medtronic"></div>
+        <div class="sponsor"><img src="img/sponzori/carl-resuscitec.png" alt="CARL Resuscitec GmbH"></div>
+        <div class="sponsor"><img src="img/sponzori/globalmed.png" alt="GlobalMed"></div>
+        <div class="sponsor"><img src="img/sponzori/medis.png" alt="Medis"></div>
+        <div class="sponsor"><img src="img/sponzori/meditrade.png" alt="Meditrade"></div>
+        <div class="sponsor"><img src="img/sponzori/vivacom.png" alt="Vivacom"></div>
+        <div class="sponsor"><img src="img/sponzori/adyton.png" alt="Adyton Medical Devices"></div>
+        <div class="sponsor"><img src="img/sponzori/euromedical.png" alt="Euromedical"></div>
+        <div class="sponsor"><img src="img/sponzori/unique-medical.png" alt="Unique Medical"></div>
+        <div class="sponsor"><img src="img/sponzori/hemosep.png" alt="Hemosep"></div>
+        <div class="sponsor"><img src="img/sponzori/operativa.png" alt="Operatíva"></div>
+        <div class="sponsor"><img src="img/sponzori/multimedic.png" alt="MultiMedic"></div>
       </div>
     </section>
   </main>
@@ -98,13 +95,6 @@
       <p class="footer-address">Ulica Ivana Kadlečíka 6851/2, 84103 Bratislava Lamač</p>
     </div>
   </footer>
-
-  <script>
-  function toggleKongresInfo() {
-    const detail = document.getElementById('detail-kongresu');
-    detail.style.display = detail.style.display === 'block' ? 'none' : 'block';
-  }
-</script>
 
 </body>
 </html>
