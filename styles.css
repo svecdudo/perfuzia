@@ -61,7 +61,7 @@ h1, h2, h3 {
   min-height: 260px;
 }
 
-/* Fotka vpravo – stačí nahrať obrázok ako img/header.jpg */
+/* Fotka vpravo – dá sa vymeniť za vlastnú, stačí prepísať img/header.jpg */
 .header-photo {
   position: absolute;
   top: 0;
@@ -69,8 +69,18 @@ h1, h2, h3 {
   bottom: 0;
   width: 62%;
   background: url("img/header.jpg") center / cover no-repeat;
-  -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 45%);
-  mask-image: linear-gradient(to right, transparent 0%, #000 45%);
+  filter: saturate(0.85) contrast(1.08) brightness(0.92);
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 55%);
+  mask-image: linear-gradient(to right, transparent 0%, #000 55%);
+}
+
+/* Modrý nádych, aby fotka ladila so zvyškom hlavičky */
+.header-photo::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(105deg, var(--navy-950) 10%, rgba(11, 35, 88, 0.55) 55%, rgba(47, 116, 232, 0.35) 100%);
+  mix-blend-mode: multiply;
 }
 
 /* Jemná bodková textúra, keď fotka chýba */
